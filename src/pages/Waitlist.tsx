@@ -50,7 +50,7 @@ function useCountdown(target: Date) {
 const HEADLINES = [
   { top: "Where Skilled Pros", accent: "Get Things Built" },
   { top: "", accent: "Democratize STEM Skills" },
-  { top: "Your Next Big Project", accent: "Starts Right Here" },
+  { top: "Your Next Project", accent: "Starts Here" },
 ];
 
 function RotatingHeadline() {
@@ -74,6 +74,7 @@ function RotatingHeadline() {
       style={{
         lineHeight: "1.08",
         fontFamily: "'Plus Jakarta Sans', sans-serif",
+        minHeight: "2.16em",
         opacity: visible ? 1 : 0,
         transform: visible ? "translateY(0)" : "translateY(12px)",
       }}
