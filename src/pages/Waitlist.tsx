@@ -49,7 +49,7 @@ function useCountdown(target: Date) {
 
 const HEADLINES = [
   { top: "Where Skilled Pros", accent: "Get Things Built" },
-  { top: "", accent: "Democratize STEM Skills" },
+  { top: "Democratize", accent: "STEM Skills" },
   { top: "Your Next Project", accent: "Starts Here" },
 ];
 
