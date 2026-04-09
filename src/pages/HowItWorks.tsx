@@ -611,8 +611,9 @@ export default function HowItWorksPage() {
               launches.
             </p>
             <Button
+              variant="outline"
               size="lg"
-              className="bg-white text-primary hover:bg-white/90 font-semibold"
+              className="bg-white text-primary border-white hover:bg-white/90 hover:text-primary font-semibold"
               onClick={() => (window.location.href = "/")}
             >
               Join the Waitlist <ArrowRight className="ml-2 h-4 w-4" />
