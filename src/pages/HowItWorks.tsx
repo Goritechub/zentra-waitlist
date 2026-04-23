@@ -48,7 +48,7 @@ const clientSteps = [
     icon: Handshake,
     title: "Fund the Contract",
     description:
-      "Before work begins, deposit funds into your ZentraGig wallet. The agreed amount is moved into escrow — locked securely until you approve each milestone.",
+      "Before work begins, deposit funds into your ZentraGig wallet. ZentraGig manages your project budget and compensates the expert only once you approve their work.",
   },
   {
     icon: MessageSquare,
@@ -60,7 +60,7 @@ const clientSteps = [
     icon: CheckCircle2,
     title: "Approve & Release Payment",
     description:
-      "Review the deliverable. If satisfied, approve the milestone to release the escrowed funds to the expert. You control every release.",
+      "Review the deliverable. If satisfied, approve the milestone and ZentraGig will compensate the expert. You control every approval.",
   },
 ];
 
@@ -93,7 +93,7 @@ const expertSteps = [
     icon: CreditCard,
     title: "Get Paid",
     description:
-      "Once the client approves your milestone, the escrowed funds are credited to your ZentraGig wallet. Withdraw to your bank account at any time.",
+      "Once the client approves your milestone, ZentraGig pays you directly into your ZentraGig wallet. Withdraw to your bank account at any time.",
   },
 ];
 
@@ -111,9 +111,9 @@ const paymentFlow = [
     step: "2",
     actor: "Platform",
     icon: Lock,
-    title: "Escrow Hold",
+    title: "Contract Activated",
     description:
-      "When a contract is started, the agreed contract amount is moved from the client's wallet into a secure escrow balance. The funds are held by ZentraGig and are not accessible by either party until the conditions are met.",
+      "When a contract starts, the client pays ZentraGig for the project delivery service. ZentraGig then compensates the expert as a contractor upon client approval of each milestone.",
     highlight: true,
   },
   {
@@ -131,7 +131,7 @@ const paymentFlow = [
     icon: CheckCircle2,
     title: "Client Approves",
     description:
-      "The client reviews and approves the milestone. This is the only event that triggers a release of escrowed funds. Clients are never forced to pay for unapproved work.",
+      "The client reviews and approves the milestone. This is the only event that triggers ZentraGig to compensate the expert. Clients are never charged for unapproved work.",
     highlight: true,
   },
   {
@@ -162,7 +162,7 @@ const disputeAndRefund = [
     icon: RotateCcw,
     title: "Refunds",
     description:
-      "If a dispute is resolved in the client's favour, the escrowed funds are returned to the client's wallet. Clients can withdraw their wallet balance to their original payment method. Refunds are processed within 5–10 business days.",
+      "If a dispute is resolved in the client's favour, ZentraGig refunds the amount to the client's wallet. Clients can withdraw their wallet balance to their original payment method. Refunds are processed within 5–10 business days.",
   },
 ];
 
@@ -235,7 +235,7 @@ export default function HowItWorksPage() {
             <p className="text-white/80 text-lg max-w-2xl mx-auto leading-relaxed">
               ZentraGig is a marketplace connecting businesses with verified
               engineers and skilled professionals. Every transaction is
-              protected by our escrow system — you only pay for approved work.
+              protected by ZentraGig — you only pay for approved, delivered work.
             </p>
           </div>
         </section>
@@ -303,9 +303,9 @@ export default function HowItWorksPage() {
                 How Money Moves on ZentraGig
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                All payments are processed through our secure escrow system.
-                Funds are only released when the client explicitly approves
-                completed work — never automatically.
+                All payments are processed securely through ZentraGig.
+                ZentraGig only compensates experts after the client explicitly
+                approves completed work — never automatically.
               </p>
             </div>
 
@@ -471,7 +471,7 @@ export default function HowItWorksPage() {
                 Protected on Both Sides
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Our escrow model means neither party can be shortchanged. If a
+                Our payment model means neither party can be shortchanged. If a
                 disagreement arises, our disputes team steps in with a fair,
                 evidence-based resolution.
               </p>
@@ -504,8 +504,7 @@ export default function HowItWorksPage() {
                     Funds are never auto-released
                   </p>
                   <p className="text-xs text-muted-foreground">
-                    Escrowed funds require an explicit approval action by the
-                    client. There is no automatic release timer.
+                    ZentraGig only pays experts after the client signs off on the work. There is no automatic payout timer.
                   </p>
                 </div>
               </div>

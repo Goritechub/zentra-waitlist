@@ -465,8 +465,8 @@ const Waitlist = () => {
             {[
               {
                 Icon: CheckCircle2,
-                title: "Secure Escrow",
-                desc: "Payments held safely until work is approved",
+                title: "Secure Payments",
+                desc: "You only pay for approved, delivered work",
               },
               {
                 Icon: Users,
