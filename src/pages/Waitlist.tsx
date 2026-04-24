@@ -58,9 +58,9 @@ function useCountdown(target: Date) {
 }
 
 const HEADLINES = [
-  { top: "Where Skilled Pros", accent: "Get Things Built" },
-  { top: "Democratize", accent: "STEM Skills" },
-  { top: "Your Next Project", accent: "Starts Here" },
+  { top: "Hire", accent: "STEM Professionals" },
+  { top: "Collaborate with", accent: "Makers & Builders" },
+  { top: "Your First Project", accent: "Starts Here" },
 ];
 
 function RotatingHeadline() {
