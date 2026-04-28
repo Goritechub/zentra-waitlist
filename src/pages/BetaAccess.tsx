@@ -27,8 +27,8 @@ const SLIDES: SlideItem[] = [
     text: "Send Proposals",
     sub: "Pitch your expertise directly to the right client.",
     icons: [
-      { Icon: FileText, style: { top: "5%",    right: "-58px" }, delay: "0s"   },
-      { Icon: Send,     style: { bottom: "5%", right: "-58px" }, delay: "0.8s" },
+      { Icon: FileText, style: { top: "-54px", left: "12%" },    delay: "0s"   },
+      { Icon: Send,     style: { bottom: "-54px", right: "12%" }, delay: "0.8s" },
     ],
   },
   {
@@ -89,16 +89,16 @@ function SlideShowcase() {
         {slide.icons.map(({ Icon, style, delay }, i) => (
           <div
             key={i}
-            className="absolute flex items-center justify-center w-11 h-11 rounded-xl border"
+            className="absolute flex items-center justify-center w-11 h-11 rounded-xl"
             style={{
               ...style,
-              background: "hsl(var(--primary)/0.12)",
-              borderColor: "hsl(var(--primary)/0.22)",
+              background: "hsl(var(--primary))",
+              boxShadow: "inset 0 1px 0 rgba(255,255,255,0.28), 0 8px 24px rgba(0,0,0,0.38), 0 2px 6px rgba(0,0,0,0.22)",
               animation: "zg-float 3s ease-in-out infinite",
               animationDelay: delay,
             }}
           >
-            <Icon className="h-5 w-5" style={{ color: "hsl(var(--primary))" }} />
+            <Icon className="h-5 w-5" style={{ color: "rgba(255,255,255,0.92)" }} />
           </div>
         ))}
         <div className="text-center space-y-2.5">
