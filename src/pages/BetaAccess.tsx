@@ -143,7 +143,7 @@ export default function BetaAccess() {
       </div>
 
       {/* Header */}
-      <header className="relative z-10 flex items-center justify-between px-6 sm:px-10 py-5">
+      <header className="relative z-20 flex items-center justify-between px-6 sm:px-10 py-5">
         <ZentraGigLogo size="lg" />
         <div className="relative">
           <button
