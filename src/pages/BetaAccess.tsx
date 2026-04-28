@@ -135,7 +135,7 @@ export default function BetaAccess() {
   const { colorTheme, setColorTheme } = useColorTheme();
 
   return (
-    <div className="min-h-screen bg-background relative flex flex-col overflow-x-hidden">
+    <div className="h-screen bg-background relative flex flex-col overflow-hidden">
       {/* Background orbs */}
       <div className="absolute inset-0 pointer-events-none select-none -z-10">
         <div className="absolute -top-40 left-1/4 w-[700px] h-[700px] rounded-full blur-3xl" style={{ background: "hsl(var(--primary)/0.05)" }} />
