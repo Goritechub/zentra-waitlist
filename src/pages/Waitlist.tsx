@@ -252,7 +252,7 @@ const Waitlist = () => {
             </div>
           )}
 
-          {/* Countdown */}
+          {/* Countdown — hidden during beta, uncomment to restore
           <div className="flex items-center justify-center gap-2 sm:gap-3 md:gap-5">
             {[
               { label: "Days", value: countdown.days },
@@ -275,6 +275,7 @@ const Waitlist = () => {
               </div>
             ))}
           </div>
+          */}
 
           {/* Form */}
           {!joined ? (
