@@ -71,3 +71,16 @@
     @apply transition-transform duration-200 hover:scale-105;
   }
 }
+
+@keyframes zg-slide-in {
+  from { transform: translateX(48px); opacity: 0; }
+  to   { transform: translateX(0);    opacity: 1; }
+}
+@keyframes zg-slide-out {
+  from { transform: translateX(0);     opacity: 1; }
+  to   { transform: translateX(-48px); opacity: 0; }
+}
+@keyframes zg-float {
+  0%, 100% { transform: translateY(0px); }
+  50%      { transform: translateY(-9px); }
+}
